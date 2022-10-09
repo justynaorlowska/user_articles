@@ -9,7 +9,9 @@ class ArticleModel with _$ArticleModel {
   factory ArticleModel(
     int id,
     int authorId,
+    String title,
     String content,
+    String picture,
   ) = _ArticleModel;
 
   factory ArticleModel.fromJson(Map<String, dynamic> json) =>
